@@ -1,0 +1,111 @@
+
+# coding: utf-8
+
+# In[2]:
+
+
+# Python object oriented programming
+# 
+
+
+# In[119]:
+
+
+class Employee:
+    raise_amount=1.04
+    def __init__(self, first, last, pay):
+        self.first=first
+        self.last=last
+        self.pay=pay
+        self.email=first + '.' + last +'@company.com'
+        
+    def fullname(self):
+        return '{} {}'.format(self.first, self.last)
+    
+    def apply_raise(self):
+        self.pay = int(self.pay*1.04)
+        
+
+    
+    
+        
+        
+        
+        
+        
+    
+
+
+# In[134]:
+
+
+print(Employee.__dict__)
+
+
+# In[121]:
+
+
+emp_1=Employee('Amit','Singh',50000)
+emp_2=Employee('Test','User',60000)
+
+
+# In[122]:
+
+
+#print(emp_1)
+#print(emp_2)
+
+
+# In[123]:
+
+
+#emp_1.first='Amit'
+#emp_1.last="Singh"
+#emp_1.email="amitkumar.singh@ryerson.ca"
+#emp_1.pay=50000
+
+
+# In[124]:
+
+
+#emp_2.first='Test'
+#emp_2.last="User"
+#emp_2.email="test.user@ryerson.ca"
+#emp_2.pay=60000
+
+
+# In[125]:
+
+
+#print(emp_1.first,emp_1.last,emp_1.email,emp_1.pay)
+
+
+# In[126]:
+
+
+print(emp_2.email)
+
+
+# In[127]:
+
+
+print('{} {}'.format(emp_1.first, emp_1.last))
+
+
+# In[130]:
+
+
+emp_1.apply_raise()
+
+
+# In[131]:
+
+
+print(emp_1.pay)
+
+
+# In[132]:
+
+
+emp_1.raise_amount()
+
