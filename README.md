@@ -65,4 +65,8 @@ and charts of your data.
 * Floor control
 * Data Structures
 * Functions
+## Note : White space has meaning in python
 
+## 3.1.1 Assignment
+
+# This section of book did not work and I would  not like to skip it but skip the book for now as I could not find any resource to figure out the error Maybe it has something to do with python version i am using`
